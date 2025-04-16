@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Carbon Footprint Tracker</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>🌍 Carbon Footprint Tracker</header>
+
+  <div class="hero">
+    Realtime monitoring of soil moisture and ambient light – helping you understand environmental impact and sustainability from the ground up.
+  </div>
+
+  <!-- Smart Sustainability Impact Card -->
+  <div class="impact-card">
+    <div class="eco-header">🌿 Smart Sustainability</div>
+    <p>
+      Our smart device uses a <strong>soil moisture sensor</strong> and an <strong>LDR (light sensor)</strong> to promote eco-friendly habits.
+      By tracking when plants actually need water, we <span class="highlight">avoid unnecessary watering</span>,
+      saving energy used in water treatment.
+    </p>
+    <p>
+      These small actions lead to <span class="highlight">lower carbon emissions</span> which can help in saving the environment.
+    </p>
+    <p style="margin-top: 10px;"><em>It’s all about turning awareness into impact!</em></p>
+  </div>
+
+  <div class="charts">
+    <div class="chart-container">
+      <div class="chart-title">Soil Moisture Levels (%)</div>
+      <canvas id="soilChart"></canvas>
+    </div>
+    <div class="chart-container">
+      <div class="chart-title">Ambient Light Intensity (%)</div>
+      <canvas id="lightChart"></canvas>
+    </div>
+  </div>
+
+  <!-- Real-time warning messages -->
+  <div id="warningBox" class="warning-box" style="display: none;"></div>
+
+  <!-- Tip section -->
+  <div class="tip-box">
+    <h3>Tip for Sustainability</h3>
+    <p>Maintain optimal soil moisture levels to avoid excessive water usage. Use the data to improve your irrigation practices!</p>
+  </div>
+
+  <footer>Made By Data Dynamaos for Prototype Hackathon 2.0 | Powered by ThingSpeak</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
